@@ -11,10 +11,32 @@
       });
     });
     
+    $(document).ready(function(){
+    
+    $(document.body).click(function () {
+      if ($("div:first").is(":hidden")) {
+        $("div").slideDown("slow");
+      } else {
+        $("div").hide();
+      }
+    });
+
+  });
+    
     </script>
+  <style>
+  div { background:#de9a44; margin:3px; width:80px; 
+        height:40px; display:none; float:left; }
+  </style>
   </head>
   <body>
     <div id ="target">Hello World</div>
     <button id ="toggle">マウスをかざしてね</button>
+    
+    Click me!
+  <div></div>
+
+  <div></div>
+  <div></div>
   </body>
   </html>
